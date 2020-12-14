@@ -5,7 +5,7 @@ from sklearn.svm import SVC
 class faculty_directory_classification:
 
     def __init__(self):
-        self.train_file = './trainingData/trainingDataSet.csv'
+        self.train_file = '.././trainingData/trainingDataSet.csv'
         self.vocabulary = []
         self.trainedModel = None
 
@@ -87,7 +87,7 @@ if __name__ == "__main__":
     model = faculty_directory_classification()
     model.train()
 
-    test_file = './trainingData/testDataSet.csv'
+    test_file = '.././trainingData/testDataSet.csv'
     rows = model.read_file(test_file)
     urls = [row[0] for row in rows]
     labels = [row[1] for row in rows]
